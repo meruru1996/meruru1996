@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+      html, body{
+        background-color: #222222;
+        color: white;
+        font-family: 'PT Serif', serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_content {
+        position: sticky;
+        top: 0;
+      }  
+      .main_content img {
+        width: 60%;
+        height: 400px;
+      }
+
+    /*タイトル*/
+    .my_introduction{
+        margin: 0 auto;
+        background-image: url("toppage16.jpg");
+        background-size: cover;
+        padding: 300px 0 300px 0;
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* Profile Section */
+    .profile_section {
+        margin: 0 auto;
+        padding: 30px 0 60px 0;
+    }
+
+    .introduction_text {
+        width: 80%;
+        background-color: rgba(0,0,0,0.55);
+        color: white;
+        font-size: 18px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .flexbox1 {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto 0 auto;
+    }
+    .flexbox2 {
+        width: 70%;
+        margin: 30px auto 0 auto;
+        font-size: 15px;
+    }
+
+    /*ポートフォリオ*/
+    /*ポートフォリオタイトル*/
+    .portfolio_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+    .portfolio_title p{
+        display: inline-block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+    }
+    .portfolio_title p:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: #008BBB;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+    .portfolio_title p:hover:before {
+        transform: scale(1);
+    }
+
+    /*レスポンシブデザイン*/
+
+    @media screen and (min-width:500px) {
+        .main_content img {
+          height: auto;
+        }
+        .portfolio {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        .portfolio .caption {
+            font-size:		150%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .caption a {
+            font-size: 10px;
+            margin: 0 auto;
+            padding: 0;
+    }
+    @media screen and (min-width:768px) {
+        .portfolio {
+        width: 45%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .portfolio {
+        width: 30%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		130%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="profile_section portfolio_section">
+            <div class="portfolio_title profile_title">
+                <p>これまでの人生（ボーイスカウト編）</p>
+            </div>
+            <img src="final_boyscout.jpg" alt="boy_scout">
+            <div class="introduction_text">
+                <p>
+　自己紹介文の中でもボーイスカウト活動を幼稚園の頃から続けていると説明しましたが、「そもそもボーイスカウトとは何ぞや？」と思う方が多くいらっしゃるだろうなと思ったのでここで詳しく掘り下げたいと思います。<br><br>
+
+　「ボーイスカウト活動は、野外で、子どもたちの自発性を大切に、グループでの活動を通じて、それぞれの自主性、協調性、社会性、たくましさやリーダーシップなどを育んでいきます。そのプログラムはバラエティに富んでいて、各年代においても様々です。（そなえよ常に、2020年12月15日参照）」。いわゆる幼稚園から大学生・大人までの幅広い年代の人が野外でキャンプやハイキングなどの野外活動を通じて仲間との協調性、つらいことに立ち向かう勇気、挑戦心を養っていく活動です。大学生・社会人の大人は隊の指導者としてスカウト一人一人の指導に当たります。<br><br>
+
+　私は幼稚園からボーイスカウト活動をやっていますが、正直小学校、中学校までは辞めたくて辞めたくて仕方ありませんでした。なぜならボーイスカウト活動をやる意味が感じられなかったからです。平日は学校・部活動で忙しいのに、せっかくの休日をボーイスカウトに費やす必要性を感じられませんでした。<br><br>
+
+　また、やめたかった理由はボーイスカウトの特性にもあります。野球やサッカーなどのスポーツは結果や実力がはっきりと目に見えるため、毎日続けていても成果が如実に表れる自分が楽しく見えるのかもしれません。しかし、ボーイスカウトは続けていて、キャンプ能力や体力などは徐々について来るのですが協調性・主体性は目に見えないのでどうしてもモチベーション維持という意味では続けるのは難しく感じていました。<br><br>
+
+　しかし、「続けて入ればいつか良いことがあるだろう」と思い、現在も活動を続けています。そして最近、ボーイスカウトを続けている自分についてふと考えることがありました。周りと比べて自分のことを評価するわけではありませんが、以前よりも協調性・ものごとに対する挑戦心は少しは身についたのではないかと感じています。サッカーや野球などのメジャーな習い事と比べて特段何かがうまくなったりスキルがついたというわけではないのですが、ボーイスカウトを続けることによって社会人として生きるために最も必要な「社会適応能力」が少しは身についてきているのではないかと思います。<br><br>
+
+　しかし、このような目に見えない能力というのは一気には成長させることはできません。これからもボーイスカウト活動を続けて、立派な社会人として社会に貢献することのできるような人間になりたいと考えています。<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

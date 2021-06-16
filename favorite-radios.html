@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+      html, body{
+        background-color: #222222;
+        color: white;
+        font-family: 'PT Serif', serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_content {
+        position: sticky;
+        top: 0;
+      }  
+      .main_content img {
+        width: 60%;
+        height: 400px;
+      }
+
+    /*タイトル*/
+    .my_introduction{
+        margin: 0 auto;
+        background-image: url("toppage16.jpg");
+        background-size: cover;
+        padding: 300px 0 300px 0;
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* Profile Section */
+    .profile_section {
+        margin: 0 auto;
+        padding: 30px 0 60px 0;
+    }
+
+    .introduction_text {
+        width: 80%;
+        background-color: rgba(0,0,0,0.55);
+        color: white;
+        font-size: 18px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .flexbox1 {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto 0 auto;
+    }
+    .flexbox2 {
+        width: 70%;
+        margin: 30px auto 0 auto;
+        font-size: 15px;
+    }
+
+    /*ポートフォリオ*/
+    /*ポートフォリオタイトル*/
+    .portfolio_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+    .portfolio_title p{
+        display: inline-block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+    }
+    .portfolio_title p:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: #008BBB;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+    .portfolio_title p:hover:before {
+        transform: scale(1);
+    }
+
+    /*フッター*/
+    footer {
+        height: 51px;
+        font-size: 12px;
+        clear:both;
+        text-align: center;
+        line-height: 2em;
+        color: white;
+        background: #000000;
+    }
+
+    /*レスポンシブデザイン*/
+
+    @media screen and (min-width:500px) {
+        .main_content img {
+          height: auto;
+        }
+        .profile_section {
+            background-image: url("toppage15_2.jpg");
+            background-size: cover;
+        }
+        .portfolio {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        .portfolio .caption {
+            font-size:		150%;
+        }
+        .portfolio_section {
+            background-image: url("toppage13.jpg");
+            background-size: cover;
+        }
+        .caption a {
+            font-size: 10px;
+            margin: 0 auto;
+            padding: 0;
+        }
+    @media screen and (min-width:768px) {
+        .profile_section {
+            background-image: url("toppage15.jpg");
+            background-size: cover;
+        }
+        .skill_section {
+            background-image: url("toppage3.jpg");
+            background-size: cover;
+        }
+        .portfolio {
+        width: 45%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+        .portfolio_section {
+            background-image: url("toppage13.jpg");
+            background-size: cover;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .profile_section {
+            background-image: url("toppage15.jpg");
+            background-size: cover;
+        }
+        .skill_section {
+            background-image: url("toppage3.jpg");
+            background-size: cover;
+        }
+        .portfolio {
+        width: 30%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		130%;
+        }
+        .portfolio_section {
+            background-image: url("toppage13.jpg");
+            background-size: cover;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="profile_section portfolio_section">
+            <div class="portfolio_title profile_title">
+                <p>Explanation</p>
+            </div>
+            <img src="favorite-radios-image.jpg" alt="radio">
+            <div class="introduction_text">
+                <p>
+                    【サービス名】<br><br>
+                    お気に入りのラジオを紹介しよう！！<br><br>
+                    【作業期間】<br><br>
+                     2020年10月15日～12月3日（約6週間）<br><br>
+                    【開発環境】<br><br>
+                    HTML/HAML/CSS/Bootstrap/MySQL/Ruby(Ruby on Rails)/Java-script/Git(Github)<br><br>
+                    【作った理由・経緯】<br><br>
+            　      私は毎日さまざまなジャンルのラジオ番組（政治・経済・お笑いなど）を聴いています。自分の生活の中で触れるメディアの中で最も割合が高いのですが、テレビやYoutubeと比べて視聴している人が少ないからか、TwitterやInstagramなどのSNSでラジオについて情報発信している人が少ないということを問題に感じました。「もっとラジオリスナーが集まって自分たちの好きなラジオ番組を共有し合えるプラットフォームがあれば便利だ」。<br><br>そのように考えた私は、それぞれのラジオ番組の魅力をイメージ画像・説明文と共に共有できるWebアプリを作成するに至りました。<br><br>
+                    【工夫した点】<br>
+            　      アプリとしての最低限の機能（情報をアップロードして不特定多数の人に向けて公開することができる）に加えて、機能面・技術面において二点意識しました。<br>まず機能面において、ラジオのサムネイル追加機能・放送時間追加機能を加えることによって共有した情報を見たユーザがそのラジオ番組をよりみたいと思えるように工夫した点です。<br><br>そして技術面において、基本的にWebアプリを作成するのに最低限必要なHTML/CSS/Ruby(Ruby on Rails)MySQL/だけでなく、記述量が少なく表面的に記法がわかりやすいHAML、デザインを綺麗に見せるBootstrapを使い、コードが見やすく、美しいアプリ作りを心がけました。<br><br>
+                    【備考】<br><br>
+            　　　　作ったアプリをherokuにデプロイしたところ、Rails6にアップデートされた際に導入された「DNSリバインディング攻撃からの保護」という機能によってブロックされてしまい、アプリを開けなくなってしまいました。<br><br>よって、githubに書いたコードのみ公開することに致しました。実際にアプリが動くかどうかについては直接会ってお話しさせていただく際にお見せできればと考えています。御了承ください。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="copyright">
+          Copyright &copy; 2021 Tsudoi's Protfolio All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

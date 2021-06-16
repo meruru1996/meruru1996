@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+      html, body{
+        background-color: #222222;
+        color: white;
+        font-family: 'PT Serif', serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_content {
+        position: sticky;
+        top: 0;
+      }  
+
+    /*タイトル*/
+    .my_introduction{
+        margin: 0 auto;
+        background-image: url("toppage16.jpg");
+        background-size: cover;
+        padding: 300px 0 300px 0;
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* Profile Section */
+    .profile_section {
+        margin: 0 auto;
+        padding: 30px 0 60px 0;
+    }
+
+    .introduction_text {
+        width: 80%;
+        background-color: rgba(0,0,0,0.55);
+        color: white;
+        font-size: 18px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .flexbox1 {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto 0 auto;
+    }
+    .flexbox2 {
+        width: 70%;
+        margin: 30px auto 0 auto;
+        font-size: 15px;
+    }
+
+    /*ポートフォリオ*/
+    /*ポートフォリオタイトル*/
+    .portfolio_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+    .portfolio_title p{
+        display: inline-block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+    }
+    .portfolio_title p:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: #008BBB;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+    .portfolio_title p:hover:before {
+        transform: scale(1);
+    }
+
+    /*レスポンシブデザイン*/
+
+    @media screen and (min-width:500px) {
+        .portfolio {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        .portfolio .caption {
+            font-size:		150%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .caption a {
+            font-size: 10px;
+            margin: 0 auto;
+            padding: 0;
+    }
+    @media screen and (min-width:768px) {
+        .portfolio {
+        width: 45%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .portfolio {
+        width: 30%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		130%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="profile_section portfolio_section">
+            <div class="portfolio_title profile_title">
+                <p>自己紹介</p>
+            </div>
+            <div class="introduction_text">
+            <p>
+【出身地】<br><br>
+　兵庫県西宮市出身。大阪や神戸などの大都市に近く都会的な印象を受けがちだが、自然も多く暮らしやすい。関西住みたい街ランキングでも毎年上位に食い込むほど、利便性が高く、暮らしやすい。<br><br><br>
+
+【中学・高校時代】<br><br>
+　中高6年間は勉強だけでなく部活動でテニスに打ち込む。高校時代に教員になることにあこがれ、また留学に挑戦してみたいこともあり、自分が目標とする教員免許状取得・留学のシステムが整った高知大学への進学を決める。<br><br><br>
+
+【大学時代】<br><br>
+　高校卒業後、すぐに高知大学人文学部国際社会コミュニケーション学科に進学した。高校時代からの目標通り、中学・高校の英語の教員免許状を取得、カナダでの一年間の語学留学・スウェーデンのイェテボリ大学で半年間交換留学生として計一年半の留学を経験した。過酷な留学生活を経験してきた結果語学力は大幅にupし、TOEIC  TEST 870点・IELTS 5.5点を取得する。<br><br>
+　そして2020年の４月から企業でのインターンシップを行うために大学を一年間休学した。しかし、新型コロナウイルス感染拡大の影響により、インターンシップは実施不可能に。公務員試験の勉強に取り組む最中、ある一冊の本を読んだのがきっかけで「ITエンジニア」という職業に興味を持つ。現在はWeb制作・Webアプリ制作について学んでいる。<br><br>
+　また、４歳の頃から続けている「ボーイスカウト活動」の指導者として奉仕活動を続けている。大学在学中は高知、そして現在は地元兵庫で活動を行う。<br><br><br>
+
+【学習履歴】<br><br>
+　２０２０年８月、大学休学中にたまたま読んだ、「１０年後に食える職業・食えない職業（渡邊正裕著）」という本がきっかけでITエンジニアを志す。HTML、CSS、Javascript（jQuery)、Ruby(Ruby on Rails)を中心に、Web制作・Webアプリケーション制作に関して学んだ。8月～１１月中旬に自作アプリを制作、そこから12月下旬にいたるまで仮想環境のAWS、Dockerの実装方法を学習した。そして12月下旬～1月中旬はホームページ制作に取り組む。<br><br><br>
+
+【最後に】<br><br>
+　高校時代の受験勉強から、大学時代における留学経験・教員免許状の取得・ボーイスカウト活動への奉仕活動・プログラミング学習の経験や行動を通して、「何事にも打ち勝つ精神力」と「さまざまなことへの挑戦心」を培ってきました。もし当方に興味をお持ちいただけましたら幸いです。<br><br>
+              </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

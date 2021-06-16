@@ -1,0 +1,705 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+html, body{
+    background-color: #222222;
+    color: white;
+    font-family: 'PT Serif', serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*JQuery用*/
+.blur {
+  filter: blur(7px);
+}
+.delete {
+  display: none;
+}
+
+.main-nav {
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: -220px;
+  height: 100%;
+  border-right: 2px solid $drk;
+  @include transition(left .5s ease, top .5s ease);
+  &.show-nav {
+    left: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+}
+
+.main_content {
+  position: sticky;
+  top: 0;
+}
+
+/*タイトル*/
+.my_introduction{
+  margin: 0 auto;
+  background-image: url("toppage9.jpg");
+  background-size: cover;
+  padding: 300px 0 300px 0;
+  color: black;
+  position: sticky;
+  top: 0;
+}
+.myname {
+  letter-spacing: 4px;
+  font-size: 6vw;
+  margin: 0 auto;
+  width: 100%;
+}
+.catch_copy {
+  font-size: 4vw;
+}
+
+/* Profile Section */
+.profile_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+.introduction_text {
+  width: 80%;
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 18px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+.flexbox1 {
+  width: 25%;
+  height: 25%;
+  margin: 0 auto 0 auto;
+}
+.flexbox2 {
+  width: 70%;
+  margin: 30px auto 0 auto;
+  font-size: 15px;
+}
+
+.profile_image img{
+  width: 100%;
+  height: 100%;
+  border-radius:50%;
+}
+
+.hobby_text {
+  padding: 15px;
+  font-size: 15px;
+}
+
+/*ポートフォリオ*/
+/*ポートフォリオタイトル*/
+.portfolio_title {
+  font-size: 40px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+.portfolio_title p{
+	display: inline-block;
+	position: relative;
+	color: white;
+ 	text-decoration: none;
+}
+.portfolio_title p:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 3px;
+	background: #008BBB;
+	transform: scale(0, 1);
+	transition: 0.3s;
+}
+.portfolio_title p:hover:before {
+	transform: scale(1);
+}
+/* スキル紹介 */
+.skill_content {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.sub_title {
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-family: 'Cinzel', serif;
+  color: white;
+}
+.sub_title p{
+	display: inline-block;
+	position: relative;
+	color: white;
+ 	text-decoration: none;
+}
+
+/* 人生振り返り */
+.life_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+.life {
+  width: 48%;
+  padding: 0 15px;
+  display: inline-block;
+  height: auto;
+  transition-duration: 0.5s;
+  border: none;
+  margin: 0 10px 0 10px;
+}
+.life img{
+  width: 100%;
+  cursor: pointer;
+}
+.life p {
+  margin-top:10px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.life p {
+  vertical-align: middle;
+}
+
+.portfolio_2 {
+	height:			auto;
+	overflow:		hidden;
+	display:		inline-block;
+	position:		relative;
+}
+.portfolio_2 .caption_2 {
+	width:			100%;
+	height:			100%;
+	visibility:		hidden;	/* 文字を表示しない */
+	font-size:		150%;
+	position:		absolute;
+	top:			70px;
+	left:			0;
+	text-align: center;
+	-webkit-transition:	all 0.4s step-end;
+	transition:		all 0.4s step-end;
+}
+.portfolio_2:hover .caption_2 {
+	visibility:		visible;	/* 文字を表示する */
+}
+.portfolio_2 .caption_2 p {
+	color:			#fff;
+  opacity:		0;	/* ホバーが解除された時すぐ消えるように、文字を表示しない */
+}
+.portfolio_2:hover .caption_2 p {
+  opacity:		1;	/* 文字を表示する */
+}
+.portfolio_2 .caption_2 a {
+  text-decoration: none;
+  color:	#fff;
+  opacity: 1;
+  font-size: 25px;
+}
+.portfolio_2 .caption_2 a:hover {
+  border-bottom: solid;
+  border-bottom-color: #008BBB;
+  border-bottom-width: 3px;
+	transform: scale(0, 1);
+	transition: 0.5s;
+}
+.portfolio_2 .mask1_2, .portfolio_2 .mask2_2 {
+	width:			50%;	/* 幅は半部のサイズ */
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.portfolio_2 .mask1_2 {
+	left:			-50%;	/* 枠の左に置いて表示させない */
+}
+.portfolio_2:hover .mask1_2 {
+	left:			0px;	/* 左にずらして表示する */
+}
+.portfolio_2 .mask2_2 {
+	right:			-50%;	/* 枠の右に置いて表示させない */
+}
+.portfolio_2:hover .mask2_2 {
+	right: 0px;	/* 右にずらして表示する */
+}
+.portfolio_2 img {
+  width: 100%;
+  height: auto;
+}
+/* 資格紹介 */
+.qualification_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+.qualification {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  transition-duration: 0.5s;
+  border: none;
+  margin: 0 10px 0 10px;
+}
+.qualification img{
+  width: 100%;
+  cursor: pointer;
+}
+.introduction_text .qualification img:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+}
+
+/* スキル紹介 */
+.skill_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+.skill{
+  width: 48%;
+  display: inline-block;
+  height: auto;
+  transition-duration: 0.5s;
+  border: none;
+  margin: 0 10px 0 10px;
+}
+.skill img{
+  width: 100%;
+  cursor: pointer;
+}
+.skill img:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+}
+.skill p {
+  margin-top:10px;
+}
+
+
+.skill_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+.skill{
+  width: 48%;
+  display: inline-block;
+  height: auto;
+  transition-duration: 0.5s;
+  border: none;
+  margin: 0 10px 0 10px;
+}
+.skill img{
+  width: 100%;
+  cursor: pointer;
+}
+.skill img:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-5px);
+  transition-duration: 0.5s;
+}
+.skill p {
+  margin-top:10px;
+}
+
+/* サービス紹介 */
+.service_item {
+  display: inline-block;
+  width: 30%;
+}
+.service_image img{
+  width: 50%;
+}
+
+.service_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+.service_image img{
+  width: 40%;
+  height: auto;
+  border-radius: 50%;
+}
+.service_content {
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 18px;
+  margin: 0 auto 40px auto;
+  padding: 30px 10px 30px 10px;
+  border-radius: 15px;
+}
+
+.service_item {
+  display: inline-block;
+  width: 30%;
+}
+.service_image img{
+  width: 50%;
+}
+
+.service_content {
+  background-color: rgba(0,0,0,0.55);
+  color: white;
+  font-size: 18px;
+  margin: 0 auto 40px auto;
+  padding: 30px 10px 30px 10px;
+  border-radius: 15px;
+}
+
+/*ポートフォリオ配置*/
+.portfolio_section {
+  margin: 0 auto;
+  padding: 30px 0 60px 0;
+}
+
+.portfolio {
+	height:			auto;
+	overflow:		hidden;
+	display:		inline-block;
+	position:		relative;
+}
+.portfolio .caption {
+	width:			100%;
+	height:			100%;
+	visibility:		hidden;	/* 文字を表示しない */
+	font-size:		150%;
+	position:		absolute;
+	top:			70px;
+	left:			0;
+	text-align: center;
+	-webkit-transition:	all 0.4s step-end;
+	transition:		all 0.4s step-end;
+}
+.portfolio:hover .caption {
+	visibility:		visible;	/* 文字を表示する */
+}
+.portfolio .caption p {
+	color:			#fff;
+  opacity:		0;	/* ホバーが解除された時すぐ消えるように、文字を表示しない */
+  text-align: center;
+}
+.portfolio:hover .caption p {
+  opacity:		1;	/* 文字を表示する */
+}
+.portfolio .caption a {
+  text-decoration: none;
+  color:	#fff;
+  opacity: 1;
+  font-size: 27px;
+}
+.portfolio .caption a:hover {
+  border-bottom: solid;
+  border-bottom-color: #008BBB;
+  border-bottom-width: 3px;
+	transform: scale(0, 1);
+	transition: 0.5s;
+}
+.portfolio .mask1, .portfolio .mask2 {
+	width:			50%;	/* 幅は半部のサイズ */
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.portfolio .mask1 {
+	left:			-50%;	/* 枠の左に置いて表示させない */
+}
+.portfolio:hover .mask1 {
+	left:			0px;	/* 左にずらして表示する */
+}
+.portfolio .mask2 {
+	right:			-50%;	/* 枠の右に置いて表示させない */
+}
+.portfolio:hover .mask2 {
+	right: 0px;	/* 右にずらして表示する */
+}
+.portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/*フッター*/
+footer {
+  background-image: url("toppage9.jpg");
+  height: 51px;
+  font-size: 12px;
+  clear:both;
+  text-align: center;
+  line-height: 2em;
+  color: white;
+  background: #000000;
+}
+
+.follow-me {
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+  padding: 0;
+}
+.follow-me li {
+  display: inline-block;
+  margin: 0 15px 80px 0;
+  padding: 0;
+}
+.follow-me li a::before {
+  background-color: #eee;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #333;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 35px;
+  height: 60px; /* Button height */
+  width: 60px; /* Button width */
+  line-height: 60px; /* Button height */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+}
+.follow-me li a:hover::before {
+  color: #fff;
+}
+
+.follow-me li .facebook::before { content: "\f09a"; }
+.follow-me li .instagram::before { content: "\f16d"; }
+.follow-me li .twitter::before { content: "\f099"; }
+.follow-me li .youtube::before { content: "\f16a"; }
+.follow-me li .gmail::before { content: "\f0e0"; }
+
+.follow-me li .facebook:hover::before { background-color: #3b5998; }
+.follow-me li .instagram:hover::before { background: linear-gradient(to right, #5478f2 0%, #f23f79 80%, orange 100%);}
+.follow-me li .twitter:hover::before { background-color: #55acee; }
+.follow-me li .youtube:hover::before { background-color: #cd201f; }
+.follow-me li .gmail:hover::before { background-color: #FF773E; }
+
+
+/*レスポンシブデザイン*/
+
+@media screen and (min-width:500px) {
+  .life_section {
+    background-image: url("toppage5_2.jpg");
+    background-size: cover;
+  }
+  .qualification_section {
+    background-image: url("toppage8.jpg");
+    background-size: cover;
+  }
+  .qualification_section .qualification img {
+    width: 112px;
+  }
+  .skill_section {
+    background-image: url("toppage11.jpg");
+    background-size: cover;
+  }
+  .profile_section {
+    background-image: url("toppage15_2.jpg");
+    background-size: cover;
+  }
+  .portfolio {
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  }
+  .portfolio .caption {
+  	font-size:		150%;
+  }
+  .portfolio_section {
+    background-image: url("toppage13.jpg");
+    background-size: cover;
+  }
+  .life {
+    width: 20%;
+    padding: 0 auto;
+    margin: 0 aut0;
+    height: auto;
+    }
+  .life p {
+    font-size: 8px;
+    padding-top: 0 auto;
+    margin-top: 0 auto;
+    padding-bottom: 60px;
+  }
+  .introduction_text .qualification img{
+    width: 50%;
+    height: auto;
+  }
+  .qualification td {
+    width: 20%;
+    font-size: 13px;
+    height: auto;
+  }
+  .skill {
+  width: 20%;
+  height: auto;
+  }
+
+  .service_item {
+    display: inline-block;
+    width: 80%;
+  }
+  .service_image img{
+    width: 30%;
+  }
+  .service_section {
+    background-image: url("toppage14_2.jpg");
+    background-size: cover;
+  }
+  .caption a {
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0 
+  }
+}
+@media screen and (min-width:768px) {
+  .life_section {
+    background-image: url("toppage5.jpg");
+    background-size: cover;
+  }
+  .qualification_section {
+    background-image: url("toppage8.jpg");
+    background-size: cover;
+  }
+  .qualification_section .qualification img {
+    width: 112px;
+  }
+  .profile_section {
+    background-image: url("toppage15.jpg");
+    background-size: cover;
+  }
+  .skill_section {
+    background-image: url("toppage11.jpg");
+    background-size: cover;
+  }
+  .portfolio {
+  width: 45%;
+  height: auto;
+  margin: 0 8px 10px 8px;
+  }
+  .portfolio .caption {
+    font-size:		120%;
+  }
+  .portfolio_section {
+    background-image: url("toppage13.jpg");
+    background-size: cover;
+  }
+  .life {
+    width: 19%;
+    height: auto;
+  }
+  .life p {
+    font-size: 9px;
+    vertical-align: middle;
+  }
+  .introduction_text .qualification img{
+    width: 48%;
+    height: auto;
+  }
+  .qualification td {
+    width: 30%;
+    height: auto;
+  }
+  .skill {
+  width: 19%;
+  height: auto;
+  }
+
+  .service_item {
+    display: inline-block;
+    width: 30%;
+  }
+  .service_image img{
+    width: 50%;
+  }
+  .service_section {
+    background-image: url("toppage14.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width:1024px) {
+  .life_section {
+    background-image: url("toppage5.jpg");
+    background-size: cover;
+  }
+  .qualification_section {
+    background-image: url("toppage8.jpg");
+    background-size: cover;
+  }
+  .qualification {
+    width: 70%;
+    height: auto;
+  }
+  .profile_section {
+    background-image: url("toppage15.jpg");
+    background-size: cover;
+  }
+  .skill_section {
+    background-image: url("toppage11.jpg");
+    background-size: cover;
+  }
+  .portfolio {
+  width: 30%;
+  height: auto;
+  margin: 0 8px 10px 8px;
+  }
+  .portfolio .caption {
+    font-size:		130%;
+  }
+  .portfolio_section {
+    background-image: url("toppage13.jpg");
+    background-size: cover;
+  }
+  .life {
+    width: 18%;
+    height: auto;
+    }
+  .qualification td {
+    width: 70%;
+    height: auto;
+  }
+  .skill {
+  width: 18%;
+  height: auto;
+  }
+  .portfolio .caption {
+    font-size:		120%;
+  }
+  .service_item {
+    display: inline-block;
+    width: 30%;
+  }
+  .service_section {
+    background-image: url("toppage14.jpg");
+    background-size: cover;
+  }
+}

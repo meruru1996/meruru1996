@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+      html, body{
+        background-color: #222222;
+        color: white;
+        font-family: 'PT Serif', serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_content {
+        position: sticky;
+        top: 0;
+      }  
+
+    /*タイトル*/
+    .my_introduction{
+        margin: 0 auto;
+        background-image: url("toppage16.jpg");
+        background-size: cover;
+        padding: 300px 0 300px 0;
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* Profile Section */
+    .profile_section {
+        margin: 0 auto;
+        padding: 30px 0 60px 0;
+    }
+
+    .introduction_text {
+        width: 80%;
+        background-color: rgba(0,0,0,0.55);
+        color: white;
+        font-size: 18px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .flexbox1 {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto 0 auto;
+    }
+    .flexbox2 {
+        width: 70%;
+        margin: 30px auto 0 auto;
+        font-size: 15px;
+    }
+
+    /*ポートフォリオ*/
+    /*ポートフォリオタイトル*/
+    .portfolio_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+    .portfolio_title p{
+        display: inline-block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+    }
+    .portfolio_title p:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: #008BBB;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+    .portfolio_title p:hover:before {
+        transform: scale(1);
+    }
+
+    /*レスポンシブデザイン*/
+
+    @media screen and (min-width:500px) {
+        .portfolio {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        .portfolio .caption {
+            font-size:		150%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .caption a {
+            font-size: 10px;
+            margin: 0 auto;
+            padding: 0;
+    }
+    @media screen and (min-width:768px) {
+        .portfolio {
+        width: 45%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .portfolio {
+        width: 30%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		130%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="profile_section portfolio_section">
+            <div class="portfolio_title profile_title">
+                <p>この先やってみたいこと</p>
+            </div>
+            <div class="introduction_text">
+                <p>
+　これまでの2020年8月～2021年1月までの約6か月にわたる期間は、自分が「Webエンジニア」もしくは「Web制作、兼Webマーケター」のどちらに進みたいのかを判断するためにWebアプリ開発言語（主にRuby/Ruby on Railsを中心に）とWeb制作言語（HTML/CSS/Javascript/jQuery）を学習してきました。結果、2021年1月現在は「Web制作、兼Webマーケター」という職業に興味が湧いています。
+よって、ここでは「Web制作、兼Webマーケター」としての10年先までのキャリア目標を【1-5年後の未来】、【5-10年後の未来】の二つに分けて説明していきます。<br><br><br>
+
+【1-5年後の未来】<br><br>
+　今後挑戦していきたいのは、大学を卒業するまでにインターンシップを通じてWeb制作（LP制作・ホームページ制作）の実務経験を積むことです。そして大学卒業後はSEO・SNSコンサルのような法人相手のお客様に対するWebマーケティングを行う会社で働くことを考えています。期間にしてみると、2022年3月までの約一年間はWeb制作のインターンシップ、そして2022年の4月から約4年間の間は法人相手に対するWebマーケティングの実務経験を積むことを考えています。
+また、自分のスキルの割合でみると、Web制作が2割・マーケティングが8割、のバランスを取りながら、最初はWeb制作中心、そしてある程度Web制作の領域を網羅し終えたら、次はWebマーケティングという様に、段階を踏んで実務経験を積んで、そして最終的には「Webマーケター」として自らのキャリアを構築していきたいと考えています。<br><br><br>
+
+【5-10年後の未来】<br><br>
+　2022年の4月から約4年間を法人相手に対するWebマーケティングの実務経験に費やした後は、徐々にその4年間の期間の中で得たマーケティングスキルを自身のビジネス領域に活かして行きたいと考えています。これは4年の実務経験を経てすぐに独立・起業するということではありません。会社の中でビジネス拡大に関する業務に取り組む中で得た知識を使って、「副業」としての商品作成・販売、ビジネス拡大に役立て、会社の中でも外でも常にビジネスに対するアンテナを張ることを考えています。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

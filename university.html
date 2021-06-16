@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+      html, body{
+        background-color: #222222;
+        color: white;
+        font-family: 'PT Serif', serif;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .main_content {
+        position: sticky;
+        top: 0;
+      }  
+
+      .main_content img {
+        width: 50%;
+        height: 200px;
+      }
+
+    /*タイトル*/
+    .my_introduction{
+        margin: 0 auto;
+        background-image: url("toppage16.jpg");
+        background-size: cover;
+        padding: 300px 0 300px 0;
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+
+    /* Profile Section */
+    .profile_section {
+        margin: 0 auto;
+        padding: 30px 0 60px 0;
+    }
+
+    .introduction_text {
+        width: 80%;
+        background-color: rgba(0,0,0,0.55);
+        color: white;
+        font-size: 18px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .flexbox1 {
+        width: 25%;
+        height: 25%;
+        margin: 0 auto 0 auto;
+    }
+    .flexbox2 {
+        width: 70%;
+        margin: 30px auto 0 auto;
+        font-size: 15px;
+    }
+
+    /*ポートフォリオ*/
+    /*ポートフォリオタイトル*/
+    .portfolio_title {
+        font-size: 40px;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        color: white;
+        font-family: 'Cinzel', serif;
+    }
+    .portfolio_title p{
+        display: inline-block;
+        position: relative;
+        color: white;
+        text-decoration: none;
+    }
+    .portfolio_title p:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 3px;
+        background: #008BBB;
+        transform: scale(0, 1);
+        transition: 0.3s;
+    }
+    .portfolio_title p:hover:before {
+        transform: scale(1);
+    }
+
+    /*レスポンシブデザイン*/
+
+    @media screen and (min-width:500px) {
+        .main_content img {
+          height: auto;
+        }
+        .portfolio {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        .portfolio .caption {
+            font-size:		150%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .caption a {
+            font-size: 10px;
+            margin: 0 auto;
+            padding: 0;
+    }
+    @media screen and (min-width:768px) {
+        .portfolio {
+        width: 45%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .portfolio {
+        width: 30%;
+        height: auto;
+        margin: 0 8px 10px 8px;
+        }
+        .portfolio .caption {
+            font-size:		130%;
+        }
+        .portfolio_section {
+            background-image: url("toppage5.jpg");
+            background-size: cover;
+        }
+        .portfolio .caption {
+            font-size:		120%;
+        }
+    }
+
+  </style>
+</head>
+
+<body>
+    <div class="main_content">
+        <div class="profile_section portfolio_section">
+            <div class="portfolio_title profile_title">
+                <p>これまでの人生</p>
+            </div>
+            <img src="final_university.jpg" alt=university>
+            <div class="introduction_text">
+                <p>
+                    【はじめに】<br><br>
+
+　プロフィール紹介文でも私の大学生活について少し触れていますが、わずか数十行の説明文だけで私の大学生生活を語ることはできません。よって、本稿では順を追って私の大学生活の歴史を紐解いていこうと思います。<br><br><br>
+
+
+
+【大学生初期編】<br><br>
+
+　おそらく大学２回生までの私はどこにでもいるただの大学生でした。高校では普通に部活動をし、大学受験をし、大学になってからはバイトをし、サークルにて友人と楽しく過ごし、そして授業がない時にはのんびりしながら貴重な大学生生活を無駄にするなど、世間的に人生のモラトリアム期間と呼ばれる時間を何も考えずに過ごすような価値のない大学生でした。
+
+　しかし、いざ周りの人間が就職について考え始める二年の後半、急激に不安が押し寄せました。周りと比べて自分に特に誇ることのできる実績・実力がなく、この頃の自分は周りと比べても周りに埋もれてしまうようなどうしようもない大学生でした。<br><br>
+
+　こうして、私は貴重な大学生生活の中で、さまざまなことに挑戦しなければならないと考え、本来大学に入る前から掲げていた「留学に行く」、「教員免許状を取得する」という目標を達成させるべく二〇歳の夏、行動を始めるのです。<br><br><br>
+
+
+
+【カナダ留学編】<br><br>
+
+　　まずはカナダでの語学留学です。次年の２０１７年の４月から翌年の３月まで大学を休学し、カナダのバンクーバにある語学学校にて一年間の留学を経験しました。留学すると決めてからは必死にアルバイトでお金を貯め、そして両親、祖父母からの支援もあり、無事に一年間の留学生活を終えることができました。<br><br>
+
+　カナダに留学してから自分の価値観・考え方ががらりと変わりました。ほぼ始めてみる外国人、さまざまな人種が混じり合う街・自分が話す英語が全く通じない状況・たくさんの留学生との出会いなど、わずか一年のうちにさまざまな物事・人との出会い、若いときにしか味わえない貴重な経験を味わうことができ、人間的に、そして語学力も大幅にupさせることができました。間違いなくカナダでの経験は自分の人生観に対する考え方を大きく変え、「挑戦する」ことの大切さを教えてくれたかけがえのない時間になりました。<br><br><br>
+
+
+
+【スウェーデン留学編】<br><br>
+
+　　しかし私の留学生活はこれで終わりません。カナダだけでは物足りないと思った私は次の留学先をスウェーデンに決めました。スウェーデンには２０１８年の９月から２０１９年の２月まで滞在しました。スウェーデンに行きたいと思った理由は<br><br>①日本という国をスウェーデンを比較し、海外という視点からみてみたいと思ったから<br>②カナダで身につけた語学力・コミュニケーション力を海外の大学機関で実際にアウトプットしてみたいと考えたからである。<br><br>カナダだけではなく、スウェーデンという福祉・社会制度が充実している国に住みながら日本を見ることによってカナダとはまた違った価値観・見方を見つけ、同時にさまざまな問題も見えてきました。<br><br>
+
+　しかし、実際に大学で授業を受けているとさまざまな課題が見えてきました。スウェーデンをはじめ、海外の大学ではディスカッションやプレゼンテーションが多く、普段自分の意見を皆の前で発する機会の少ない私はうまく発言できませんでした。しかし、自分なりに工夫して問題点を改善し、試行錯誤することによって、半年間の間に少しではありますが、周りの学生や先生の前で自分の意見や考えを発言することに慣れました。<br><br><br>
+
+
+
+【教育実習編】<br><br>
+
+　　そしてスウェーデンから帰国してすぐ、私は高校生からの夢だった中学・高等学校の教員免許状の取得のために教職授業・教育実習を本格的に行います。ずっと憧れていた教員という職業。子どもが好きで、なおかつ自分が海外で身につけた語学力を遺憾なく活かすことのできる教員という仕事は自分の転職だと思っていました。<br><br>
+
+　しかし、そういった自分の価値観はいとも簡単に崩れ去ります。夢見て参加した教育実習。３週間という非常に短い期間でしたが、子ども達と接することによってより教員に対する憧れが増しました。しかし、実際に先生として働いてみてたくさんの悪い側面が見えました。一向に変化しないはんこ・紙文化、大量の業務量、それに伴う毎日遅くまでかかる残業、現場の先生の古く凝り固まった価値観など、自分がもし教員になったらこれだけの問題と向き合わなければならないという現実を突きつけられました。<br><br>
+
+　そして2019年度、教育実習を含めすべての実習・授業を終えてから私は教員になる夢を諦めました。苦渋の決断でしたが、教員になって子どもと触れあいかれらの成長を見守れるという夢以上に、多量のデメリットを背負うことに耐えられなかったからです。<br><br><br>
+
+
+
+【二度目の大学休学編】<br><br>
+
+　　そして２０１９年２月、就職活動の時期を迎えた私は、改めて自分のキャリアについて見つめ直すために、2020年の4月から2021年の3月まで大学を休学して、長期インターンシップを実施することにしました。しかし商社でインターンシップをすることが決まったのもつかの間、4月に日本全体に緊急事態宣言が発令され突然インターンシップが中止になってしまったのです。<br><br>
+
+　大学に休学申請をした直後に突然の中止宣言。私の一年間のプランが一気に崩れ去りました。本当に人生は何が起こるのか予測できません。路頭に迷った私は、周りに進められ、とりあえず公務員試験の勉強・アルバイトをしながら将来の自分のキャリアについて見つめ直す時間を作りました。基本的には日中は公務員試験の勉強・アルバイトに励み、隙間時間を利用してキャリア本・自己啓発本を大量に読み漁るのです。<br><br>
+
+　そして、プロフィールでも書いたように、2020年の8月に読んだ「１０年後に食える職業・食えない職業（渡邊正裕著）」という本がきっかけでITエンジニアという職業について知り、それと同時に本気でなりたいと考えるようになりました。私はITエンジニアの中でもアプリ開発を行うWebエンジニアに憧れました。Webエンジニアになりたいと思った理由は<br><br>①生活をシステム化して、たくさんの人々に使ってもらえるアプリの開発に携わってみたいと考えたからである。<br>②Web開発の技術は奥が深くすべてを知るのは大変というデメリットはあるのですが、逆に新しい知識や道の技術について、何年間もかけて勉強し続けられることに魅力を感じたからです。<br><br><br>
+
+
+
+【最後に】<br><br>
+
+　この文章を書いているのは2020年の11月です。まだ大学を卒業してないため、このストーリーにも続きがあります。これから、自分に何か変化があれば追記していきたいと思います。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
